@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/mobile.css" />
+
+    <script src="./scripts/email_validation.js" defer></script>
+
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/desktop/logo.svg" alt="" class="header-logo" />
+    </header>
+    <main>
+      <h1 class="page-heading">
+        Publish your podcasts <span>everywhere.</span>
+      </h1>
+      <p class="page-paragraph">
+        Upload your audio to Pod with a single click. We’ll then distribute your
+        podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and
+        more!
+      </p>
+      <form class="page-form">
+        <input
+          class="email-input"
+          type="email"
+          id="email-input"
+          name="email"
+          placeholder="Email address"
+          aria-label="Enter email address"
+          autocomplete="off"
+        />
+        <p id="error-message" class="error-message">
+          Oops! Please check your email
+        </p>
+        <input
+          id="submit-button"
+          class="submit-button"
+          type="submit"
+          value="Request access"
+        />
+      </form>
+      <ul class="icons-container">
+        <li>
+          <a href="#"
+            ><img
+              src="./assets/desktop/spotify.svg"
+              class="spotify-link"
+              aria-hidden="true"
+              alt=""
+            />
+            <span class="sr-only">Spotify</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./assets/desktop/apple-podcast.svg"
+              class="apple-podcasts-link"
+              aria-hidden="true"
+              alt=""
+            />
+            <span class="sr-only">Apple Podcasts</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./assets/desktop/google-podcasts.svg"
+              class="google-podcasts-link"
+              aria-hidden="true"
+              alt=""
+            />
+            <span class="sr-only">Google Podcasts</span></a
+          >
+        </li>
+        <li>
+          <a href="#"
+            ><img
+              src="./assets/desktop/pocket-casts.svg"
+              class="pocket-casts-link"
+              aria-hidden="true"
+              alt=""
+            />
+            <span class="sr-only">Pocket Casts</span></a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
