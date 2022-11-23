@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@100;200;300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 /* Design system styles */
@@ -23,7 +23,7 @@ body {
   box-shadow: inset 0 0 0 1000px rgba(18, 23, 37, 0.9);
   font-family: 'Chivo', 'sans-serif';
   font-size: 0.9375rem;
-  font-weight: 200;
+  font-weight: 100;
   color: var(--gray-1);
   display: flex;
   flex-direction: column;
@@ -48,9 +48,9 @@ main {
 .page-heading {
   text-transform: uppercase;
   text-align: center;
-  font-size: clamp(26px, 5.6vw + 0.31rem, 48px);
-  line-height: clamp(38px, 4.58vw + 1.3rem, 56px);
-  font-weight: 200;
+  font-size: clamp(1.625rem, 5.6vw + 0.31rem, 3rem);
+  line-height: clamp(2.375rem, 4.58vw + 1.3rem, 3.5rem);
+  font-weight: 100;
   color: var(--green);
 }
 
@@ -59,15 +59,15 @@ main {
 }
 
 .page-paragraph {
-  margin-top: clamp(16px, 6.11vw + -0.43rem, 40px);
-  font-size: clamp(15px, 0.19vw + 0.83rem, 15px);
-  line-height: clamp(25px, 0.76vw + 1.38rem, 28px);
+  margin-top: clamp(1rem, 6.11vw + -0.43rem, 2.5rem);
+  font-size: clamp(0.9375rem, 0.76vw + 0.76rem, 1.125rem);
+  line-height: clamp(1.5625rem, 0.76vw + 1.38rem, 1.75rem);
   text-align: center;
   max-width: 27.8125rem;
 }
 
 .page-form {
-  margin-top: clamp(40px, -2.04vw + 3.48rem, 48px);
+  margin-top: clamp(2.5rem, -2.04vw + 3.48rem, 3rem);
   order: 3;
   display: flex;
   flex-direction: column;
@@ -86,7 +86,7 @@ input {
   outline: none;
   cursor: pointer;
   width: clamp(20.4375rem, 25.45vw + 14.47rem, 26.6875rem);
-  height: clamp(46px, 2.54vw + 2.28rem, 56px);
+  height: clamp(2.875rem, 2.54vw + 2.28rem, 3.5rem);
 }
 
 .email-input {
@@ -99,6 +99,7 @@ input {
   margin-top: 1rem;
   color: var(--black);
   background-color: var(--green);
+  font-weight: 700;
 }
 
 .submit-button:hover {
@@ -121,7 +122,7 @@ input {
   line-height: 0.875rem;
   color: var(--soft-red);
   position: absolute;
-  top: -22px;
+  top: -1.375rem;
   left: 2rem;
 }
 
@@ -163,11 +164,12 @@ input {
   body {
     background-image: url('../assets/desktop/bg-pattern-dots.svg'),
       url('../assets/tablet/image-host.jpg');
-    background-position: top 57.5rem left clamp(40px, 18.6vw + -6.43rem, 165px),
+    background-position: top 57.5rem left
+        clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem),
       top right;
-    background-size: auto, 491px;
+    background-size: auto, 30.6875rem;
     box-shadow: none;
-    padding-left: clamp(40px, 18.6vw + -6.43rem, 165px);
+    padding-left: clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem);
     align-items: flex-start;
     min-height: 64rem;
   }
@@ -178,8 +180,8 @@ input {
 
   main {
     background-color: var(--black);
-    margin-top: clamp(103px, -7.29vw + 13rem, 152px);
-    padding-top: clamp(5.25rem, 0.6vw + 79.36px, 88px);
+    margin-top: clamp(6.4375rem, -7.29vw + 13rem, 9.5rem);
+    padding-top: clamp(5.25rem, 0.6vw + 79.36px, 5.5rem);
     padding-bottom: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -187,28 +189,30 @@ input {
     width: clamp(39.6875rem, 13.1vw + 33.4rem, 45.1875rem);
   }
 
-  .page-heading,
-  .page-paragraph {
+  .page-heading {
     text-align: left;
+    font-size: clamp(3rem, 0.6vw + 2.71rem, 3.25rem);
+    line-height: clamp(3.5rem, 0.89vw + 3.07rem, 3.875rem);
   }
 
   .page-paragraph {
     margin-top: clamp(1.5rem, -2.38vw + 3.64rem, 2.5rem);
+    text-align: left;
   }
 
   .page-form {
     position: relative;
     align-items: flex-end;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     order: 0;
   }
 
   .submit-button {
     position: absolute;
     margin-top: 0px;
-    margin-right: 5px;
-    width: 162px;
-    height: 46px;
+    margin-right: 0.3125rem;
+    width: 10.125rem;
+    height: 2.875rem;
   }
 
   .error-message {
@@ -234,8 +238,8 @@ input {
 
   main {
     background-color: var(--black);
-    margin-top: clamp(103px, -7.29vw + 13rem, 152px);
-    padding-top: clamp(5.25rem, 0.6vw + 79.36px, 88px);
+    margin-top: clamp(6.4375rem, -7.29vw + 13rem, 9.5rem);
+    padding-top: clamp(5.25rem, 0.6vw + 79.36px, 5.5rem);
     padding-bottom: 1rem;
     display: flex;
     flex-direction: column;
@@ -255,15 +259,15 @@ input {
   .page-form {
     position: relative;
     align-items: flex-end;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     order: 0;
   }
 
   .submit-button {
     position: absolute;
     margin-top: 0px;
-    margin-right: 5px;
-    width: 162px;
-    height: 46px;
+    margin-right: 0.3125rem;
+    width: 10.125rem;
+    height: 2.875rem;
   }
 }
